@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+    <style>
+        .recuadro {
+            text-align: center;
+        }
+        .title {
+            font-family: "Rajdhani", sans-serif;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 70px;
+        }
+        .logo {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 100px auto;
+            margin-bottom: 10px;
+        }
+        #librosUsuario {
+            background-color: white;
+            border-color: blue;
+            width: 400px;
+            height: 50px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 25px;
+            color: #9D9D9D;
+            cursor: pointer;
+            font-family: "Rajdhani", sans-serif;
+            
+        }
+        #librosUsuario:focus {
+            
+            outline-color: blue;
+        }
+        .guias {
+            font-family: "Rajdhani", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            margin-right: 250px;
+            margin-bottom: 2px;
+
+         }
+        .btn-1 {
+            display: flex;
+            justify-content: center;
+            
+        }
+        #anadir {
+            margin-top: 25px;
+            width: 400px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: blue;
+            color: white;
+            font-family: "Rajdhani", sans-serif;
+            font-size: 28px;
+            cursor: pointer;
+
+
+        }
+        .btn-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #quitar {
+            margin-top: 25px;
+            width: 400px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: red;
+            color: white;
+            font-family: "Rajdhani", sans-serif;
+            font-size: 28px;
+            cursor: pointer;
+
+        }
+        .material-symbols-outlined {
+            width: 45px;
+            height: 45px;
+            padding-top: 7px;
+            padding-right: 5px;
+            
+        }
+        .figure {
+            position: absolute;
+            margin: 5 2 2 5;
+            display: flex;
+        }
+        #libroAgregado {
+            display: none;
+            width: 200px;
+            height: 60px;
+            background-color: lightgreen;
+            color: green;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 10px;
+            border-width: 10px;
+            
+        }
+        #libroEliminado {
+            display: none;
+            width: 200px;
+            height: 60px;
+            background-color: lightcoral;
+            color: red;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 10px;
+            border-width: 10px;
+            
+        }
+        .mostrarLibros{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            text-align: center;
+            color: blue;
+            font-family:"Rajdhani", sans-serif;
+            font-size: 20px;
+        }
+     </style>
+</head>
+<div class="recuadro">
+<img class="logo" src="./stack-books_5832416.png" alt="icono">
+<h1 class="title">Librería San José</h1>
+<H4 class="guias">Escriba aquí su libro</H4>
+<input id="librosUsuario" type="text">
+
+</div>
+<div class="btn-1">
+    <button type="button" id="anadir" ><span class="material-symbols-outlined">
+        add_shopping_cart
+        </span>Añadir</button>
+    
+   
+    <figure class="figure">
+</figure>
+</div>
+<div class="btn-2">
+    <button type="button" id="quitar" ><span class="material-symbols-outlined">
+        delete
+        </span>Quitar</button>
+        
+</div>
+<div>
+<div id="libroEliminado">
+    <h2>Su libro fue eliminado con éxito</h2>
+</div>
+<div id="libroAgregado">
+    <h2>Su libro fue agregado con éxito</h2>
+</div>
+<div class="mostrarLibros" id="lista">
+    
+</div>
+</div>
+
+<body>
+    <script src="./index.js"></script>
+</body>
+</html>
